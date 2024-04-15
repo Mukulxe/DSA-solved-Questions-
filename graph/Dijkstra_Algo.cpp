@@ -33,12 +33,12 @@ void dijkstra(int src, int n)
             /* code */
             if (nbr.second + distance_from_node < dis[nbr.first])
             {
-                auto result = st.find(make_pair(nbr.first, dis[nbr.first]));
-                // if found, then remove
-                if (result != st.end())
-                {
-                    st.erase(result);
-                }
+                // auto result = st.find(make_pair(nbr.first, dis[nbr.first]));
+                // // if found, then remove
+                // if (result != st.end())
+                // {
+                //     st.erase(result);
+                // }
                 // here we are upadting distance vector
                 dis[nbr.first] = nbr.second + distance_from_node;
                 // here we are inserting the the latest updated pair in set
