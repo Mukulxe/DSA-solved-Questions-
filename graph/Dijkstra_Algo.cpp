@@ -16,7 +16,7 @@ public:
 };
 void dijkstra(int src, int n)
 {
-   set<pair<int, int>> st;
+    set<pair<int, int>> st;
     vector<int> dis(n, INT_MAX);
     st.insert({src, 0});
     dis[src] = 0;
